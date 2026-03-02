@@ -1,7 +1,6 @@
 ## Three conda environments need to be set up.
 1. [RFdiffusion](https://github.com/RosettaCommons/RFdiffusion)
-2. ProteinMPNN + FastRelax Environment
-3. af2_binder_design
+2. peptide_design environment
 
 ---
 

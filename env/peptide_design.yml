@@ -1,0 +1,50 @@
+name: peptide_design
+channels:
+  - conda-forge
+  - defaults
+  - pytorch
+  - nvidia
+  - https://conda.rosettacommons.org
+
+dependencies:
+  - python=3.11
+  - pip
+  - setuptools
+  - wheel
+
+  - numpy=1.26
+  - scipy
+  - pandas
+  - tqdm
+  - biopython=1.79
+  - ml-collections
+  - mock
+  - ipykernel
+
+  # PyRosetta (conda)
+  - pyrosetta
+
+  # TensorFlow (often safest as conda cpu build; keep as-is if you need it)
+  - tensorflow=2.15
+
+  # PyTorch (GPU, CUDA 11.8)
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=11.8
+
+  - pip:
+      - absl-py
+      - immutabledict
+      - dm-tree
+      - dm-haiku==0.0.11
+      - ml-dtypes~=0.2.0
+
+      # JAX + GPU jaxlib (CUDA 11 / cuDNN 8.6) from official wheel index
+      - --find-links=https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
+      - jax==0.4.25
+      - jaxlib==0.4.25+cuda11.cudnn86
+
+      # Optional but common
+      - chex
+      - optax

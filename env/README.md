@@ -42,7 +42,8 @@ pip install -e . # install the rfdiffusion module from the root of the repositor
 
 ```bash
 conda env create -f env/peptide_design.yml
-conda activate proteinmpnn_binder_design
+conda activate peptide_design
+pip install -e .
 ```
 
 --- 

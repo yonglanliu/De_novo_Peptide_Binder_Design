@@ -39,6 +39,7 @@ dependencies:
       - dm-tree
       - dm-haiku==0.0.11
       - ml-dtypes~=0.2.0
+      - rmsd
 
       # JAX + GPU jaxlib (CUDA 11 / cuDNN 8.6) from official wheel index
       - --find-links=https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
